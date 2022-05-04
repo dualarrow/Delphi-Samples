@@ -1,0 +1,1 @@
+This project has a basic client and server with an initial dirty attempt to be able to switch the client side to either call via the MVC engine or to call the code in the client (ie a standalone app that doesn't use MVC).
