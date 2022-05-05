@@ -12,7 +12,7 @@ uses
   madListModules,
   MVCClientUnit in 'MVCClientUnit.pas',
   MVCServerClass in 'MVCServerClass.pas',
-  MVCInterfaces in 'MVCInterfaces.pas';
+  InterfacesSample in 'InterfacesSample.pas';
 
 begin
   ReportMemoryLeaksOnShutdown := True;

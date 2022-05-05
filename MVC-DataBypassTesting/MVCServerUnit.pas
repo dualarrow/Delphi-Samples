@@ -10,7 +10,7 @@ procedure RunServer;
 implementation
 
 uses
-  MVCServerController,
+  ControllerSample,
   SysUtils,
   Web.WebReq,
 //  Web.WebBroker,
@@ -63,7 +63,6 @@ begin
       // end;
     end;
 
-  // Writeln(Format('Starting HTTP Server or port %d', [APort]));
   LServer := TIdHTTPWebBrokerBridge.Create(nil);
   try
     LServer.DefaultPort := APort;
@@ -79,10 +78,7 @@ begin
 
     WriteLn('Write "quit" or "exit" to shutdown the server');
     repeat
-      // TextColor(RED);
-      // TextColor(LightRed);
       Write('-> ');
-      // TextColor(White);
       if lStartupCommand.IsEmpty then
         ReadLn(lCmd)
       else
@@ -143,7 +139,7 @@ begin
   // Image files
 //  fMVC.AddMiddleware(TMVCStaticFilesMiddleware.Create('/images', '.\www\public_images', 'database.png'));
 
-  fMVC.AddController(TMainController);
+  fMVC.AddController(TSampleController);
 end;
 
 procedure TWebModuleServer.WebModuleDestroy(Sender: TObject);

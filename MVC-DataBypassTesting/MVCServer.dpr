@@ -11,8 +11,8 @@ uses
   madListProcesses,
   madListModules,
   MVCServerUnit in 'MVCServerUnit.pas',
-  MVCServerController in 'MVCServerController.pas',
-  DTO in 'DTO.pas';
+  ControllerSample in 'ControllerSample.pas',
+  DTOSample in 'DTOSample.pas';
 
 begin
   RunServer;

@@ -162,7 +162,7 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <DCC_Define>madExcept;$(DCC_Define)</DCC_Define>
         <DCC_MapFile>3</DCC_MapFile>
-        <DCC_UnitSearchPath>c:\sr\development\vcs\dlib\xe\mvc;c:\sr\development\vcs\dlib\xe\loggerpro;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>c:\sr\development\vcs\dlib\xe\mvc;c:\sr\development\vcs\dlib\xe\loggerpro;c:\sr\development\vcs\dlib\xe\spring;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Manifest_File>(None)</Manifest_File>
         <AppDPIAwarenessMode>none</AppDPIAwarenessMode>
@@ -179,7 +179,7 @@
         </DelphiCompile>
         <DCCReference Include="MVCClientUnit.pas"/>
         <DCCReference Include="MVCServerClass.pas"/>
-        <DCCReference Include="MVCInterfaces.pas"/>
+        <DCCReference Include="InterfacesSample.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

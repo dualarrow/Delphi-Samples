@@ -1,17 +1,17 @@
-unit MVCInterfaces;
+unit InterfacesSample;
 
 interface
 
 uses
   MVCFramework.Commons,
   MVCFramework.RESTAdapter,
-  DTO;
+  DTOSample;
 
 type
-  ITest = interface(IInvokable)
+  ISample = interface(IInvokable)
     ['{2BB61600-425E-4B3D-A6AB-5B805BDADF26}']
     [RESTResource(HttpPost, '/test')]
-    function test([Body]req: TDataReq): TDataResp;
+    function test([Body]req: TSampleReq): TSampleResp;
   end;
 
 implementation

@@ -1,16 +1,16 @@
-unit DTO;
+unit DTOSample;
 
 interface
 
 type
-  TDataReq = class
+  TSampleReq = class
   private
     fIntData: integer;
   public
     property IntData: integer read fIntData write fIntData;
   end;
 
-  TDataResp = class
+  TSampleResp = class
   private
     fTestData: string;
   public

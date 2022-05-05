@@ -1,9 +1,9 @@
-unit MVCServerController;
+unit ControllerSample;
 
 interface
 
 uses
-  DTO,
+  DTOSample,
   MVCFramework,
   MVCFramework.Logger,
   MVCFramework.Commons,
@@ -11,11 +11,11 @@ uses
 
 type
   [MVCPath('/')]
-  TMainController = class(TMVCController)
+  TSampleController = class(TMVCController)
   public
     [MVCPath('/test')]
     [MVCHTTPMethod([httpPOST])]
-    procedure Test([MVCFromBody]body: TDataReq);
+    procedure Test([MVCFromBody]body: TSampleReq);
   end;
 
 implementation
@@ -26,10 +26,10 @@ uses
 
 { TMainController }
 
-procedure TMainController.Test(body: TDataReq);
+procedure TSampleController.Test(body: TSampleReq);
 begin
   body.IntData := 123;
-  var resp := GetServerWork.Test(body);
+  var resp := GetWorkerSample.Test(body);
   Render(resp);
 end;
 

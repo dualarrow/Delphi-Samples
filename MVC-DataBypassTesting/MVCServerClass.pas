@@ -3,10 +3,10 @@ unit MVCServerClass;
 interface
 
 uses
-  MVCInterfaces,
-  DTO;
+  InterfacesSample,
+  DTOSample;
 
-function GetServerWork: ITest;
+function GetWorkerSample: ISample;
 
 implementation
 
@@ -14,23 +14,23 @@ uses
   SysUtils;
 
 type
-  TServerWork = class(TInterfacedObject, ITest)
+  TWorkerSample = class(TInterfacedObject, ISample)
   public
-    function test(req: TDataReq): TDataResp;
+    function test(req: TSampleReq): TSampleResp;
   end;
 
-function GetServerWork: ITest;
+function GetWorkerSample: ISample;
 begin
-  result := TServerWork.Create;
+  result := TWorkerSample.Create;
 end;
 
 
-{ TServerWork }
+{ TWorkerSample }
 
-function TServerWork.test(req: TDataReq): TDataResp;
+function TWorkerSample.test(req: TSampleReq): TSampleResp;
 begin
 //  req.Free;
-  result := TDataResp.Create;
+  result := TSampleResp.Create;
   result.TestData := 'Hello World ' + DateTimeToStr(now);
 end;
 

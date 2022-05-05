@@ -3,9 +3,9 @@ unit MVCClientUnit;
 interface
 
 uses
-  DTO,
+  DTOSample,
   MVCServerClass,
-  MVCInterfaces,
+  InterfacesSample,
   MVCFramework.Commons,
   MVCFramework.RESTAdapter;
 
@@ -18,23 +18,23 @@ uses
 
 procedure RunClient;
 var
-  RESTAdapter: TRESTAdapter<ITest>;
-  TestService: ITest;
+  RESTAdapter: TRESTAdapter<ISample>;
+  SampleService: ISample;
 begin
   var useRest: boolean := true;
 //  useRest := false;
 
   if useRest then
   begin
-    RESTAdapter := TRESTAdapter<ITest>.Create;
-    TestService := RESTAdapter.Build('localhost', 8080);
+    RESTAdapter := TRESTAdapter<ISample>.Create;
+    SampleService := RESTAdapter.Build('localhost', 8080);
   end
   else
-    TestService := GetServerWork;
+    SampleService := GetWorkerSample;
 
-  var req := TDataReq.Create;
+  var req := TSampleReq.Create;
   req.IntData := 987;
-  var resp := TestService.Test(req);
+  var resp := SampleService.Test(req);
   writeln(resp.TestData);
   resp.free;
 end;

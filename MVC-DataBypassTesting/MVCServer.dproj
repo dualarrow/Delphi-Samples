@@ -178,8 +178,8 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="MVCServerUnit.pas"/>
-        <DCCReference Include="MVCServerController.pas"/>
-        <DCCReference Include="DTO.pas"/>
+        <DCCReference Include="ControllerSample.pas"/>
+        <DCCReference Include="DTOSample.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
