@@ -12,7 +12,7 @@ uses
   madListModules,
   MVCServerUnit in 'MVCServerUnit.pas',
   MVCServerController in 'MVCServerController.pas',
-  DAO in 'DAO.pas';
+  DTO in 'DTO.pas';
 
 begin
   RunServer;

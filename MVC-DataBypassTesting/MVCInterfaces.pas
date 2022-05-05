@@ -5,7 +5,7 @@ interface
 uses
   MVCFramework.Commons,
   MVCFramework.RESTAdapter,
-  DAO;
+  DTO;
 
 type
   ITest = interface(IInvokable)

@@ -179,7 +179,7 @@
         </DelphiCompile>
         <DCCReference Include="MVCServerUnit.pas"/>
         <DCCReference Include="MVCServerController.pas"/>
-        <DCCReference Include="DAO.pas"/>
+        <DCCReference Include="DTO.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

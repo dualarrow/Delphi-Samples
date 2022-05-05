@@ -4,7 +4,7 @@ interface
 
 uses
   MVCInterfaces,
-  DAO;
+  DTO;
 
 function GetServerWork: ITest;
 

@@ -3,7 +3,7 @@ unit MVCClientUnit;
 interface
 
 uses
-  DAO,
+  DTO,
   MVCServerClass,
   MVCInterfaces,
   MVCFramework.Commons,
